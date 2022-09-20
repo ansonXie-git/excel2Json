@@ -98,3 +98,23 @@ startKeys	id	key2	xmax	ymax	width	height	testStr	testFloat
 
 `{"test2":{"1":{"1":{"id":1,"key2":1,"xmax":4,"ymax":4,"width":1334,"height":750,"testStr":"ads","testFloat":123.5},"2":{"id":1,"key2":2,"xmax":1,"ymax":5,"width":1334,"height":360,"testStr":"qer","testFloat":546.556}},"2":{"1":{"id":2,"key2":1,"xmax":1,"ymax":2,"width":1750,"height":1334,"testStr":"tre","testFloat":1.55},"2":{"id":2,"key2":2,"xmax":2,"ymax":4,"width":1680,"height":750,"testStr":"htfg","testFloat":0.88},"3":{"id":2,"key2":3,"xmax":5,"ymax":4,"width":524,"height":789,"testStr":"jyt","testFloat":0.88}},"3":{"1":{"id":3,"key2":1,"xmax":3,"ymax":6,"width":750,"height":180,"testStr":"gjf","testFloat":-58.25}}}}`
 
+## 例子3
+
+**excel内容**
+
+fileName	test3	path	./json/test3.json
+keys	0		
+			
+startKeys	
+
+day	123	
+
+level	111	
+
+cd	20	
+
+name	anson
+
+**生成json**
+
+`{"test3":{"day":123,"level":111,"cd":20,"name":"anson"}}`
