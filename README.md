@@ -6,7 +6,20 @@
 
 **excel内容**
 
-![excel图片](C:\Users\Administrator\Desktop\1663645671780.png "Magic Gardens")
+fileName	test	path	./json/test.json				
+keys	1						
+							
+startKeys	id	xmax	ymax	width	height	testStr	testFloat
+
+	        1	4	    4	    1334	750	     ads	123.5
+            
+	        2	1	    5	    1334	360	     qer	546.556
+            
+	        3	1	    2	    1750	1334	 tre	1.55
+            
+	        4	2	    4	    1680	750	     htfg	0.88
+            
+	        5	3	    6	    750	    180	     gjf	-58.25
 
 **生成json**
 
