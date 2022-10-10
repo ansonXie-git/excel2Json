@@ -1,0 +1,12 @@
+{
+    "MapConfig": {
+        "10000": {
+            "id": 10000,
+            "xMax": 4,
+            "yMax": 2,
+            "width": 1334,
+            "height": 750,
+            "source": "mainMap"
+        }
+    }
+}

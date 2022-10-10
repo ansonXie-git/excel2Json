@@ -14,6 +14,7 @@ const excel2json = async function () {
         let savePath = '';
         let startKeyID = 0;
         let startCol = 0;
+        let remarkRow = -1;
         let topBool = false;
         let keysBool = false;
         let savePathBool = false;
@@ -25,6 +26,7 @@ const excel2json = async function () {
         worksheet.eachRow((row, rowNumber) => {//rowNumber表示第几行
             // cell.type单元格类型：6-公式 ;2-数值；3-字符串
             row.eachCell((cell, colNumber) => {//colNumber表示第几列；cell表示数据
+                if (cell.value == '备注') remarkRow = rowNumber;
                 if (rowNumber == 1) {//第一行，记录文件名与保存地址
                     const value = cell.value;
                     if (value == 'fileName' && !topBool) {
@@ -49,7 +51,7 @@ const excel2json = async function () {
                         keysBool = false;
                         keys = value;
                     }
-                } else {//其他都是内容
+                } else if (remarkRow != rowNumber) {//其他都是内容
                     if (cell != null || cell.value != '' || cell.value != null) {//空值不要
                         const value = cell.value;
                         if (keys == 0) {
