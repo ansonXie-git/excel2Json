@@ -1,6 +1,10 @@
 # excel2Json
 自定义excel转json，支持0~2个key。
 
+## 运行环境：
+
+下载nodejs；
+cmd执行命令：npm i -S exceljs
 
 ## 例子1：
 
